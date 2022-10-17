@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:intl/intl.dart';
 
 class DetailPage extends StatelessWidget {
   final String docID;
@@ -10,6 +11,7 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    DateFormat _dateFormat = DateFormat('y-MM-d H:mm');
     return Scaffold(
       appBar: AppBar(),
       body: ListView(
@@ -27,7 +29,7 @@ class DetailPage extends StatelessWidget {
                 children: [
                   Text(snapshot.data['army']),
                   Text(snapshot.data['model']),
-                  Text(snapshot.data['duration']),
+                  Text(_dateFormat.format(snapshot.data['duration'].toDate())),
                   Text(snapshot.data['purpose']),
                   SizedBox(
                     width: double.infinity,
@@ -86,7 +88,7 @@ class DetailPage extends StatelessWidget {
             FirebaseFirestore.instance
                 .collection('flight_info')
                 .doc(docID)
-                .update({'accepted': true});
+                .update({'accepted': 'accepted'});
             Navigator.pop(context);
           },
           child: Text('승인'),
@@ -97,7 +99,7 @@ class DetailPage extends StatelessWidget {
             FirebaseFirestore.instance
                 .collection('flight_info')
                 .doc(docID)
-                .update({'accepted': false});
+                .update({'accepted': 'declined'});
             Navigator.pop(context);
           },
           child: Text('반려'),

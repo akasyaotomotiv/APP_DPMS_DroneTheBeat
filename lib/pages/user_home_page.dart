@@ -18,7 +18,7 @@ class UserHomePage extends StatelessWidget {
                 whereIn: [FirebaseAuth.instance.currentUser!.uid]).snapshots(),
             builder: (context, AsyncSnapshot snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return CircularProgressIndicator();
+                return Center(child: CircularProgressIndicator());
               }
 
               return Expanded(
@@ -27,7 +27,7 @@ class UserHomePage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return RequestCard(
                       model: snapshot.data.docs[index]['model'],
-                      duration: snapshot.data.docs[index]['duration'],
+                      duration: snapshot.data.docs[index]['duration'].toDate(),
                       index: (index + 1).toString(),
                       accepted: snapshot.data.docs[index]['accepted'],
                       docID: snapshot.data.docs[index].id,
@@ -36,12 +36,6 @@ class UserHomePage extends StatelessWidget {
                 ),
               );
             },
-          ),
-          ElevatedButton(
-            onPressed: () {
-              FirebaseAuth.instance.signOut();
-            },
-            child: Text('로그아웃'),
           ),
         ],
       ),
