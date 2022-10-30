@@ -1,7 +1,6 @@
-# Project name or Logo
-![Logo](https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png)
+# Project Logo
+![DPMS_foreground](https://user-images.githubusercontent.com/66682023/198877843-9e164cd3-a900-4fc2-b033-8421be6d240e.png)
 
-프로젝트명 또는 프로젝트 로고 이미지 **(택1)**
 
 ## 프로잭트 소개
 - 설명 기입
@@ -15,15 +14,16 @@
 * 권장: Google Chrome 버젼 77 이상
 
 ## 기술 스택 (Technique Used) 
-### Back-end
- -  Firebase
- 
 ### Front-end
  -  Flutter
 
+### Back-end
+ -  Firebase
+ 
+
 ## 설치 안내 (Installation Process)
 ```bash
-$ git clone git주소
+$ git clone https://github.com/osamhack2022-v2/APP_DPMS_DroneTheBeat.git
 $ yarn or npm install
 $ yarn start or npm run start
 ```
@@ -39,16 +39,9 @@ $ yarn start or npm run start
  샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
  
 ## 팀 정보 (Team Information)
-- Jung Byung Ju (swed3011@icloud.com), Github Id: swed3011
-- Jo Young Jun (yjun8136@gmail.com), Github Id: yjjo8136
+- 공군 중위 정병주 (swed3011@icloud.com), Github Id: swed3011
+- 공군 병장 조영준 (yjun8136@gmail.com), Github Id: yjjo8136
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
- * [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
 
 This project is licensed under the terms of the MIT license.
-
-※ [라이선스 비교표(클릭)](https://olis.or.kr/license/compareGuide.do)
-
-※ [Github 내 라이선스 키워드(클릭)](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/licensing-a-repository)
-
-※ [\[참조\] Github license의 종류와 나에게 맞는 라이선스 선택하기(클릭)](https://flyingsquirrel.medium.com/github-license%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%EB%82%98%EC%97%90%EA%B2%8C-%EB%A7%9E%EB%8A%94-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EC%84%A0%ED%83%9D%ED%95%98%EA%B8%B0-ae29925e8ff4)
