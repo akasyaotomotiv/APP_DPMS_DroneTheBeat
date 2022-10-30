@@ -51,14 +51,6 @@ $ yarn start or npm run start
 
 <img src="https://user-images.githubusercontent.com/66682023/198878778-092c9c07-1d1f-4f69-9a44-1db8564e224a.jpg" width="200" height="400"/>
 
-
-
-잘 모를 경우
-구글 검색 - 마크다운 문법
-[https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017](https://post.naver.com/viewer/postView.nhn?volumeNo=24627214&memberNo=42458017)
-
- 편한 마크다운 에디터를 찾아서 사용
- 샘플 에디터 [https://stackedit.io/app#](https://stackedit.io/app#)
  
 ## 팀 정보 (Team Information)
 - 공군 중위 정병주 (swed3011@icloud.com), Github Id: swed3011
